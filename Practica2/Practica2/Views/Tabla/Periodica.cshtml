@@ -1,0 +1,176 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tabla Periodica de los Elementos</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="~/css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <br />
+    <br />
+    <h1>Tabla Periodica de los Elementos</h1>
+
+    @for (int i = 1; i <= 9; i++)
+    {
+        if (i == 1)
+        {
+            @for (int fila1 = 1; fila1 <= 2; fila1++)
+            {
+                <div class="fila1">
+                    @ViewBag.Resultado[fila1]
+                </div>
+
+                //colores
+                
+
+            
+
+                if (fila1 == 1)
+                {
+
+                    for (int div = 1; div <= 16; div++)
+                    {
+                        <div class="invisible"></div>
+                    }
+                }
+            }
+
+            <br />
+        }
+
+
+        //Fila2
+
+        if (i == 2)
+        {
+            for (int fila2 = 3; fila2 <= 10; fila2++)
+            {
+                <div class="fila2">
+                    @ViewBag.Resultado[fila2]
+                </div>
+
+                if (fila2 == 4)
+                {
+                    for (int div2 = 1; div2 <= 10; div2++)
+                    {
+                        <div class="invisible"></div>
+
+                    }
+                }
+            }
+
+            <br />
+        }
+
+        //Fila3
+
+        if (i == 3)
+        {
+            @for (int fila3 = 11; fila3 <= 18; fila3++)
+            {
+                <div class="fila3">@ViewBag.Resultado[fila3]</div>
+
+                if (fila3 == 12)
+                {
+                    for (int div3 = 1; div3 <= 10; div3++)
+                    {
+                        <div class="invisible"></div>
+                    }
+                }
+            }
+            <br />
+        }
+
+
+        if (i == 4)
+        {
+            @for (int fila4 = 19; fila4 <= 36; fila4++)
+            {
+                <div class="fila4">
+                    @ViewBag.Resultado[fila4]
+                </div>
+            }
+
+            <br />
+
+        }
+
+        if (i == 5)
+        {
+            @for (int fila5 = 37; fila5 <= 54; fila5++)
+            {
+                <div class="fila5">
+                    @ViewBag.Resultado[fila5]
+                </div>
+            }
+
+            <br />
+        }
+
+        if (i == 6)
+        {
+            @for (int fila6 = 55; fila6 <= 72; fila6++)
+            {
+                <div class="fila6">
+                    @ViewBag.Resultado[fila6]
+                </div>
+            }
+
+            <br />
+        }
+
+        if (i == 7)
+        {
+            @for (int fila7 = 73; fila7 <= 90; fila7++)
+            {
+                <div class="fila7">
+                    @ViewBag.Resultado[fila7]
+                </div>
+            }
+
+            <br />
+        }
+
+        if (i == 8)
+        {
+            @for (int fila8 = 91; fila8 <= 105; fila8++)
+            {
+                if (fila8 == 91)
+                {
+                    @for (int divA = 1; divA <= 3; divA++)
+                    {
+                        <div class="invisible">
+
+                        </div>
+                    }
+                }
+                <div class="grupoy">
+                    @ViewBag.Resultado[fila8]
+                </div>
+            }
+            <br />
+        }
+
+        if (i == 9)
+        {
+            @for (int fila9 = 106; fila9 <= 120; fila9++)
+            {
+                if (fila9 == 106)
+                {
+                    @for (int divB = 1; divB <= 3; divB++)
+                    {
+                        <div class="invisible"></div>
+                    }
+                }
+
+                <div class="grupoz">
+                    @ViewBag.Resultado[fila9]
+                </div>
+            }
+        }
+    }
+
+</body>
+</html>
+
